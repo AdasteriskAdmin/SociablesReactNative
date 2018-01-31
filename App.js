@@ -2,21 +2,23 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 import StartGame from './components/StartGame';
+import RuleCard from './components/RuleCard';
 
 export default class App extends React.Component {
 
+  
   startGameHandler = () => {
-
+    console.log("Starting Game...");
   }
+
 
 
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <StartGame startGame={this.startGameHandler} />
-
-        <Text>Shake your phone to open the developer menu.</Text>
+        <Text>Get litty</Text>
+        <StartGame onStartGame={this.startGameHandler} />
+        <RuleCard />
       </View>
     );
   }
@@ -27,7 +29,7 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'red',
+    backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center',
   },

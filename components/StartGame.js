@@ -3,11 +3,10 @@ import { Button } from 'react-native';
 
 const startGame = props => {
 
-
-
+    
 
     return (
-      <Button title="Start Game" onPress={prop.startGame} />
+      <Button title="Start Game" onPress={props.onStartGame} />
 
     );
 
